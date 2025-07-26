@@ -19,6 +19,8 @@ public class MissoesModel {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String nome;
+
+    @Enumerated(EnumType.STRING)
     private RankMissoes rank;
 
     // @OneToMany - Uma missão pode ter vários ninjas
